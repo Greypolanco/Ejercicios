@@ -5,6 +5,7 @@ public class Ejercicios{
         Ejercicio();
         Poligono();
         GradosRadianes();
+        CambiodeDolares();
     }
 
     public static void Ejercicio(){
@@ -26,6 +27,13 @@ public class Ejercicios{
         float Degrees = 35;
         float convert = (Degrees * pi)/180;
         System.Console.WriteLine($"Los grados {Degrees} a Radianes es: {convert}");
+    }
+
+    public static void CambiodeDolares(){
+        float dolar = 50.00f;
+        float euro = 0.92f;
+        float convert = dolar * euro;
+        System.Console.WriteLine($"la cantidad del {dolar} en euro es: {convert}");
     }
 }
 
