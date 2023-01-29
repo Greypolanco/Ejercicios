@@ -10,6 +10,11 @@ public class Ejercicios{
         System.Console.WriteLine("Ingrese un numero: ");
         int num = Convert.ToInt32(Console.ReadLine());
         NumerosPar(num);
+
+        //----- Ejercicio del dia de la semana
+        System.Console.WriteLine("Ingrese un numero del 1 al 7: ");
+        int opcion = Convert.ToInt32(Console.ReadLine());
+        Semana(opcion);
     }
 
     public static void Ejercicio(){
@@ -48,5 +53,35 @@ public class Ejercicios{
             System.Console.WriteLine("Numero Impar");
         }
     }
+
+    public static void Semana(int opcion){
+        switch(opcion){
+            case 1:
+                System.Console.WriteLine("Lunes");
+                break;
+            case 2:
+                System.Console.WriteLine("Martes");
+                break;
+            case 3:
+                System.Console.WriteLine("Miercoles");
+                break;
+            case 4:
+                System.Console.WriteLine("Jueves");
+                break;
+            case 5:
+                System.Console.WriteLine("Viernes");
+                break;
+            case 6:
+                System.Console.WriteLine("Sabado");
+                break;
+            case 7:
+                System.Console.WriteLine("Domingo");
+                break;
+            default:
+                System.Console.WriteLine("Opcion no valida");
+                break;
+        }
+    }
+
 }
 
