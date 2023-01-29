@@ -6,6 +6,10 @@ public class Ejercicios{
         Poligono();
         GradosRadianes();
         CambiodeDolares();
+        //----------- ejercicio de numero par
+        System.Console.WriteLine("Ingrese un numero: ");
+        int num = Convert.ToInt32(Console.ReadLine());
+        NumerosPar(num);
     }
 
     public static void Ejercicio(){
@@ -34,6 +38,15 @@ public class Ejercicios{
         float euro = 0.92f;
         float convert = dolar * euro;
         System.Console.WriteLine($"la cantidad del {dolar} en euro es: {convert}");
+    }
+
+    public static void NumerosPar(int num){
+        if(num %2==0){
+            System.Console.WriteLine( "Numero Par");
+        }
+        else{
+            System.Console.WriteLine("Numero Impar");
+        }
     }
 }
 
