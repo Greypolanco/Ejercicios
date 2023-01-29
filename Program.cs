@@ -4,6 +4,7 @@ public class Ejercicios{
     public static void Main(string[] args){
         Ejercicio();
         Poligono();
+        GradosRadianes();
     }
 
     public static void Ejercicio(){
@@ -18,6 +19,13 @@ public class Ejercicios{
         int Longitudes = 4;
         int Perimeters = Sides * Longitudes;
         System.Console.WriteLine("La longitud del perimetor es: " + Perimeters);
+    }
+
+    public static void GradosRadianes(){
+        float pi = 3.1416f;
+        float Degrees = 35;
+        float convert = (Degrees * pi)/180;
+        System.Console.WriteLine($"Los grados {Degrees} a Radianes es: {convert}");
     }
 }
 
